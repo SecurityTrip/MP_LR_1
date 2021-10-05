@@ -84,5 +84,5 @@ int main()
 		
 		repeat = repeat_check();
 	}
-
+	return 0;
 }
