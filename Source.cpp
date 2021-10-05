@@ -15,6 +15,7 @@ double check_input(string flag)
 			cin.clear();
 			cin.ignore(99999999, '\n');
 			cout << "Wrong type of input data, try again" << endl;
+			cout << "Enter the speed in the selected units" << endl;
 			cin >> in_value;
 		}
 		return in_value;
@@ -28,6 +29,9 @@ double check_input(string flag)
 			cin.clear();
 			cin.ignore(99999999, '\n');
 			cout << "Wrong type of input data, try again" << endl;
+			cout << "Select the number of initial speed units" << endl;
+			cout << "1.m/s" << endl;
+			cout << "2.km/h" << endl;
 			cin >> in_value;
 		}
 		return in_value;
