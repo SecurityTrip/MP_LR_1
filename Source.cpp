@@ -52,7 +52,7 @@ string repeat_check()
 	return repeat;
 }
 
-int main() 
+int main()
 {
 	while (repeat != "N" && repeat != "n")
 	{
@@ -70,18 +70,17 @@ int main()
 		cout << "Enter the speed in the selected units" << endl;
 		speed = check_input("double");
 		double output_value;
-		switch (choose)
+		if (choose == 1)
 		{
-		case 1:
 			output_value = speed * 3.6;
 			cout << "Speed in km/h = " << output_value << endl;
-			break;
-		case 2:
+		}
+		if (choose == 2)
+		{
 			output_value = speed / 3.6;
 			cout << "Speed in m/s = " << output_value << endl;
-			break;
 		}
-		
+
 		repeat = repeat_check();
 	}
 	return 0;
