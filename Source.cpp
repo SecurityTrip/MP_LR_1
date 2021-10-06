@@ -57,8 +57,7 @@ int main()
 	while (repeat != "N" && repeat != "n")
 	{
 		cout << "Select the number of initial speed units" << endl;
-		cout << "1.m/s" << endl;
-		cout << "2.km/h" << endl;
+		cout << "1.m/s" << endl << "2.km/h" << endl;
 		int choose;
 		choose = check_input("integer");
 		while (choose != 1 && choose != 2)
